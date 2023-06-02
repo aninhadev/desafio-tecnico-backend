@@ -15,16 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 //produtos
-Route::get('/produtos/listar', 'ProductController@listar');
-Route::get('/produtos/cadastrar', 'ProductController@create');
+Route::get('/produtos/listar', 'ProductController@listar')->name('produtos.listar');
+Route::post('/produtos/cadastrar', 'ProductController@create');
 Route::post('/produtos/listar', 'ProductController@store');
 Route::get('/produtos/{id}/edit', 'ProductController@edit');
 Route::put('/produtos/{id}/', 'ProductController@update');
 Route::delete('/produtos/{id}/delete', 'ProductController@destroy');
 
 //categorias
-Route::get('/categorias/listar', 'CategoryController@listar');
-Route::get('/categorias/cadastrar', 'CategoryController@create');
+Route::get('/categorias/listar', 'CategoryController@listar')->name('categorias.listar');
+Route::post('/categorias/cadastrar', 'CategoryController@create');
 Route::get('/categorias/{id}/edit', 'CategoryController@edit');
 Route::post('/categorias/listar', 'CategoryController@store');
 Route::delete('/categorias/{id}/delete', 'CategoryController@destroy');

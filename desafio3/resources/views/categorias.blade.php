@@ -6,7 +6,7 @@
     <div class="categories-container">
         <div class="spaced-contend">
             <h1>Categorias</h1>
-        <a href="{{url('categorias/cadastrar')}}">
+        <a href="{{route('categorias.cadastrar')}}">
             <button type="button" class="btn btn-success btn-sm">+ Adicionar</button>
         </a>
         </div>

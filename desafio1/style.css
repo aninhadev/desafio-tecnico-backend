@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  padding: 50px 300px;
+  text-justify:distribute-all-lines;
+  gap: 90px;
+}
+
+h1{
+  font-weight: 700;
+}
+
+.declaration {
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-declaration{
+  text-indent: 70px;
+  line-height: 25px;
+  font-stretch: ultra-condensed;
+}
+
+.localization{
+  text-align: right;
+  width: 100%;
+}
+
+.signature-line{
+  height: 2px ;
+  width: 320px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #353030 ;
+  display: inline-block;
+}
+
+.secretary-signed{
+  font-stretch: ultra-condensed;
+  font-size: 18px;
+}
+
